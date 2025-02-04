@@ -1,1 +1,5 @@
 tabuada_res = int(input('insira um numero inteiro e lhe direi sua tabuada'))
+
+for i in range (1, 11, +1):
+    result = tabuada_res * i
+    print( i , "x" ,tabuada_res, " é igual a " ,result)
