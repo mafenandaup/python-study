@@ -1,0 +1,1 @@
+tabuada_res = int(input('insira um numero inteiro e lhe direi sua tabuada'))
