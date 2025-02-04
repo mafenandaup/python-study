@@ -31,3 +31,10 @@ else:
    elif(tamanho> 1.70):
        print('quase um ciclope.')
       
+contador = 0
+
+
+while contador <= 5:
+
+    print(contador)
+    contador += 1
