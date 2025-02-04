@@ -34,7 +34,29 @@ else:
 contador = 0
 
 
-while contador <= 5:
+while contador <= 10:
 
     print(contador)
     contador += 1
+    if (contador == 7):
+        break
+
+    
+    frutas = ["maçã", "banana", "laranja"]
+
+for fruta in frutas:
+    print(fruta)
+
+    # instruções continue e pass
+    
+    i = 0
+
+    for i in range(10):
+        i=+1
+        if (i % 2 == 0):  #se o I for divisivel por dois, continua a printar, senão, passa
+            continue
+    print(i)
+    
+    # for i in range(5):
+    # pass
+    
