@@ -16,7 +16,7 @@ import random
 # resultado_not = not (a > 5)   # False
 
 idade = random.randint(1,27)
-tamanho = 1.70
+tamanho = 1.90
 
 print('sua idade é de: ' ,idade, 'anos.')
 if idade >= 18:
