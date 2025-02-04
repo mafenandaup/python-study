@@ -59,4 +59,12 @@ for fruta in frutas:
     
     # for i in range(5):
     # pass
+
+    # TUPLAS EM PYTHON
+    # ao contrario das listas, uma vez criadas, não podem ser modificadas
+
+    minha_tupla = (1,2,67,2,2,4)
     
+print (minha_tupla.index(2))   #devolve o índice da aparição do primeiro elemento na tupla
+
+print (minha_tupla.index(2, 2))    # devolve o n° de vezes que o número aparece na tupla
