@@ -68,3 +68,14 @@ for fruta in frutas:
 print (minha_tupla.index(2))   #devolve o índice da aparição do primeiro elemento na tupla
 
 print (minha_tupla.index(2, 2))    # devolve o n° de vezes que o número aparece na tupla
+
+#  FUNÇÕES DOS : em python (além dos blocos de código)
+
+# 2. Fatiamento (Slicing)
+# definir intervalos em listas, tuplas, strings ou outros objetos iteráveis.
+
+# numeros = [0, 1, 2, 3, 4, 5]
+# print(numeros[1:4])  # [1, 2, 3] - Elementos do índice 1 até 3
+# print(numeros[:3])    # [0, 1, 2] - Do início até o índice 2
+# print(numeros[3:])    # [3, 4, 5] - Do índice 3 até o final
+# print(numeros[::-1])  # [5, 4, 3, 2, 1, 0] - Reverte a lista
