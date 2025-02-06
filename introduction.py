@@ -102,3 +102,48 @@ print (minha_tupla.index(2, 2))    # devolve o n° de vezes que o número aparec
 # CONJUNTOS (SET)
 # estrutura de dados mutável, armazena uma coleção de elementos únicos
 # representada por chaves.
+
+# Para criar um conjunto, utilize chaves ou a função set():
+
+# frutas = {"maçã", "banana", "laranja"}
+# numeros = set([1, 2, 3, 4, 5])
+#  suportam operações matemáticas de conjuntos, como a união (|), a interseção (&), a diferença (-) e a diferença simétrica (^).
+
+conjunto1 = {1, 2, 3}
+conjunto2 = {3, 4, 5}
+
+
+uniao = conjunto1 | conjunto2
+print(uniao)  # Imprime {1, 2, 3, 4, 5}
+
+
+intersecao = conjunto1 & conjunto2
+print(intersecao)  # Imprime {3}
+
+
+diferenca = conjunto1 - conjunto2
+print(diferenca)  # Imprime {1, 2}
+
+
+diferenca_simetrica = conjunto1 ^ conjunto2
+print(diferenca_simetrica)  # Imprime {1, 2, 4, 5}
+
+# TAMBÉM PODEM POSSUIR AS FUNÇÕES ADD, REMOVE,DISCARD E CLEAR
+
+frutas = {"maçã", "banana", "laranja"}
+
+
+frutas.add("pera")
+print(frutas)  # Imprime {"maçã", "banana", "laranja", "pera"}
+
+
+frutas.remove("banana")
+print(frutas)  # Imprime {"maçã", "laranja", "pera"}
+
+
+frutas.discard("uva")
+print(frutas)  # Imprime {"maçã", "laranja", "pera"}
+
+
+frutas.clear()
+print(frutas)  # Imprime set()
