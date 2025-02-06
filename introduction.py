@@ -99,3 +99,6 @@ print (minha_tupla.index(2, 2))    # devolve o n° de vezes que o número aparec
 # pessoa.update({"profissao": "Engenheiro"}) # atualiza o card
 # print(pessoa)  # Imprime {"nome": "João", "idade": 25, "cidade": "Madri", "profissao": "Engenheiro"}
 
+# CONJUNTOS (SET)
+# estrutura de dados mutável, armazena uma coleção de elementos únicos
+# representada por chaves.
