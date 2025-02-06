@@ -79,3 +79,10 @@ print (minha_tupla.index(2, 2))    # devolve o n° de vezes que o número aparec
 # print(numeros[:3])    # [0, 1, 2] - Do início até o índice 2
 # print(numeros[3:])    # [3, 4, 5] - Do índice 3 até o final
 # print(numeros[::-1])  # [5, 4, 3, 2, 1, 0] - Reverte a lista
+
+
+# 3. Definição de Dicionários
+# Em dicionários, os dois pontos separam as chaves de seus respectivos valores.
+
+# pessoa = {"nome": "João", "idade": 25}
+# print(pessoa["nome"])  # João
