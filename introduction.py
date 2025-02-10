@@ -255,3 +255,15 @@ print(f"Olá, meu nome é {nome} e tenho {idade} anos.")
 # se o arquivo não existe,, será criado automaticamente.
 # Se o arquivo já existir, seu conteúdo será sobrescrito.
 
+#  FUNCÇÃO READ (r)
+arquivo = open("dados.txt", "r")
+conteudo = arquivo.read()
+print(conteudo)
+arquivo.close()
+
+# sempre feche o arquivo para preservar recursos.
+# FUNÇÃO WRITE (w)
+
+arquivo = open("dados.txt", "w")
+arquivo.write("Olá, mundo!")
+arquivo.close()
