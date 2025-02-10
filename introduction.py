@@ -147,3 +147,11 @@ print(frutas)  # Imprime {"maçã", "laranja", "pera"}
 
 frutas.clear()
 print(frutas)  # Imprime set()
+
+# SOBRE FUNÇÕES:
+
+def saudacao(): # def de definição
+    print("Olá, mundo!")
+
+
+saudacao()  # Imprime "Olá, mundo!"
