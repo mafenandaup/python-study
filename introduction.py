@@ -158,8 +158,8 @@ saudacao()  # Imprime "Olá, mundo!"
 
 # com parâmetros
 nome = "maria"
-saudacao(nome)
-saudacao("jonas")
+print(saudacao(nome))
+print(saudacao("jonas"))
 
 # valores de retorno:
 def soma(a, b):
@@ -214,3 +214,38 @@ except ValueError: # ESPECIFICA O TIPO DE ERRO
     print("Erro: Valor inválido")
 finally:
     print("saindo....")  # executado sempre, mesmo se não houverem exceções.
+
+# EXEÇÕES PERSONALIZADAS 
+# Para criar uma exceção personalizada, 
+# você deve criar uma classe que herde da classe
+#  base Exception ou de uma de suas subclasses. EX:
+
+def funcao():
+    # Código que pode gerar uma exceção personalizada
+    if condicao:
+        raise Exception("Descrição do erro")
+    
+# . Em vez de criar uma classe personalizada,
+ #  utiliza-se diretamente a classe base Exception 
+ # para gerar a exceção.
+
+try:
+    funcao()
+except Exception as e:
+    print(f"Erro: {str(e)}")
+
+# ENTRADAS/SAÍDAS: INPUT
+
+nome = input("Insira seu nome: ")
+print("Olá, " + nome + "!")
+
+# como o input sempre sai como caixa de texto, é 
+#  importante você especificar as suas variáveis.
+
+idade = int(input("Insira sua idade: "))
+
+if idade >= 18:
+    print("Você é maior de idade.")
+else:
+    print("Você é menor de idade.")
+print(f"Olá, meu nome é {nome} e tenho {idade} anos.")
