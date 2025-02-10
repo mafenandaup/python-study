@@ -254,3 +254,4 @@ print(f"Olá, meu nome é {nome} e tenho {idade} anos.")
 # possui diferentes modos de exibição, como leitura, escrita e anexagem.
 # se o arquivo não existe,, será criado automaticamente.
 # Se o arquivo já existir, seu conteúdo será sobrescrito.
+
