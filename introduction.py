@@ -155,3 +155,62 @@ def saudacao(): # def de definição
 
 
 saudacao()  # Imprime "Olá, mundo!"
+
+# com parâmetros
+nome = "maria"
+saudacao(nome)
+saudacao("jonas")
+
+# valores de retorno:
+def soma(a, b):
+    return a + b
+
+
+resultado = soma(3, 4)
+print(resultado)  # Imprime 7
+
+# FUNÇÕES ANONIMAS/LAMBDA: permitem só em uma única linha
+quadrado = lambda x: x ** 2
+print(quadrado(5))  # Imprime 25
+
+# FUNÇÕES COM NÚMERO VARIÁVEL DE ARGUMENTOS
+
+def soma_variavel(*numeros):
+    total = 0
+    for numero in numeros:
+        total += numero
+    return total
+
+
+print(soma_variavel(1, 2, 3))  # Imprime 6
+print(soma_variavel(4, 5, 6, 7))  # Imprime 22
+
+# DOCUMENTAÇÃO DE FUNÇÕES: DOCSTRINGS
+
+def area_retangulo(base, altura):
+    """
+    Calcula a área de um retângulo.
+
+
+    Args/ARGUMENTOS:
+        base (float): A base do retângulo.
+        altura (float): A altura do retângulo.
+
+
+    Returns/RETORNA:
+        float: A área do retângulo.
+    """
+    return base * altura
+
+# MANEJO DE EXCEÇÕES: BLOCO TRY!!
+
+try:
+    # Código que pode gerar uma exceção
+    resultado = 10 / 0  # Divisão por zero
+    print(resultado)
+except ZeroDivisionError: # ESPECIFICA O TIPO DE ERRO
+    print("Erro: Divisão por zero")
+except ValueError: # ESPECIFICA O TIPO DE ERRO
+    print("Erro: Valor inválido")
+finally:
+    print("saindo....")  # executado sempre, mesmo se não houverem exceções.
