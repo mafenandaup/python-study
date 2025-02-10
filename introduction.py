@@ -256,14 +256,22 @@ print(f"Olá, meu nome é {nome} e tenho {idade} anos.")
 # Se o arquivo já existir, seu conteúdo será sobrescrito.
 
 #  FUNCÇÃO READ (r)
-arquivo = open("dados.txt", "r")
-conteudo = arquivo.read()
-print(conteudo)
-arquivo.close()
+# arquivo = open("dados.txt", "r")
+# conteudo = arquivo.read()
+# print(conteudo)
+# arquivo.close()
 
 # sempre feche o arquivo para preservar recursos.
 # FUNÇÃO WRITE (w)
 
-arquivo = open("dados.txt", "w")
-arquivo.write("Olá, mundo!")
-arquivo.close()
+# arquivo = open("dados.txt", "w")
+# arquivo.write("Olá, mundo!")
+# arquivo.close()
+
+# Você também pode utilizar a declaração with para manejar a abertura e fechamento de arquivos de maneira automática.
+
+with open("dados.txt", "r") as arquivo:
+    conteudo = arquivo.read()
+    print(conteudo)
+    
+# Neste caso, o arquivo é aberto utilizando a declaração with e é fechado automaticamente uma vez que se sai do bloco with, mesmo se ocorrer uma exceção.
