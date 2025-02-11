@@ -2,6 +2,7 @@ import math
 import random
 import datetime
 import custom_modules
+from pacotespy import module1
 
 resultado = math.sqrt(25)
 print(resultado)  # Imprime 5.0
@@ -14,3 +15,4 @@ data_atual = datetime.datetime.now()
 print(data_atual)  # Imprime a data e hora atual
 
 print(custom_modules.saudar("maria"))
+print(module1.lindar("jonas"))
